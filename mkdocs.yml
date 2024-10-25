@@ -4,26 +4,41 @@ theme:
   name: material
   logo: "images/logo.svg"
   favicon: images/favicon.ico
+  custom_dir: docs/overrides
+  features:
+  - navigation.tabs
+  - navigation.tabs.sticky
   palette:
-    - scheme: default
-      toggle:
-        icon: material/toggle-switch
-        name: Switch to dark mode
-
-    # Palette toggle for dark mode
-    - scheme: slate
-      primary: white
-      toggle:
-        icon: material/toggle-switch-off
-        name: Switch to light mode
+    scheme: slate
+    primary: black
   font:
     text: Raleway
 extra:
   generator: false    
+  navigation:
+    tabs: true  # Attiva la navigazione a tab
 copyright: Copyright &copy; 2024 Jakala Tech
 
-# Define navigation (optional)
 nav:
   - Home: index.md
-  - REGEX: regex.md
-  - Script utili: utils.md
+  - Growthbook:
+      - Overview: pages/growthbook/index.md
+      - Installation: pages/growthbook/configuration.md
+      - Quick Start: pages/growthbook/customization.md
+  - VWO:
+      - Configuration: pages/VWO/configuration.md
+      - Customization: pages/VWO/customization.md
+      - Deployment: pages/VWO/deployment.md
+  - Adobe Target:
+      - Plugin A: pages/adobetarget/configuration.md
+      - Plugin B: pages/adobetarget/customization.md
+  - Ab Testy:
+      - API: pages/abtesty/configuration.md
+      - Customization: pages/abtesty/customization.md
+  - Monetate:
+      - Configuration: pages/monetate/configuration.md
+      - Customization: pages/monetate/customization.md
+  - GTM:
+      - Configuration: pages/gtm/configuration.md
+      - Customization: pages/gtm/customization.md
+  - Blog: pages/blog/index.md
