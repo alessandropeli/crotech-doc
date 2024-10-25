@@ -1,0 +1,29 @@
+site_name: CRO-Tech Documentation
+site_url: https://sitename.example
+theme:
+  name: material
+  logo: "images/logo.svg"
+  favicon: images/favicon.ico
+  palette:
+    - scheme: default
+      toggle:
+        icon: material/toggle-switch
+        name: Switch to dark mode
+
+    # Palette toggle for dark mode
+    - scheme: slate
+      primary: white
+      toggle:
+        icon: material/toggle-switch-off
+        name: Switch to light mode
+  font:
+    text: Raleway
+extra:
+  generator: false    
+copyright: Copyright &copy; 2024 Jakala Tech
+
+# Define navigation (optional)
+nav:
+  - Home: index.md
+  - REGEX: regex.md
+  - Script utili: utils.md
